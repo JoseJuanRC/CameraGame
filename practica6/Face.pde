@@ -35,6 +35,10 @@ void setupCam() {
     break;
     } catch(IllegalStateException e) {}
   }
+  if (cam == null) {
+    println("Error, no se ha podido leer la cámara");
+    System.exit(1);
+  }
 }
 
 

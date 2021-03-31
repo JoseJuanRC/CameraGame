@@ -49,7 +49,6 @@ void checkRectBounds() {
   
     
     // Si la distancia es menor al radio de la esfera es que estamos dentro
-    println(distance(cx,cy, testX, testY));
     if (distance(cx,cy, testX, testY)<rad/2) {
       pointSound.play();
       pointX.remove(i);

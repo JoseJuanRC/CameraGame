@@ -20,6 +20,9 @@ Este proyecto tiene como objetivo desarrollar un juego con el que puedas interac
     - El jugador ganará si se eliminan todos los rectángulos
 
 ## Decisiones
+###### Cámara
+- En el caso de que no se encuentre disponible volveremos a intentar acceder a ella un determinado número de veces más.
+
 ###### Movimiento Inicial
 - Será aleatorio:
     - Eje horizontal: En cualquier dirección

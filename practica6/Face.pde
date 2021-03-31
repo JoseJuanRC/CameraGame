@@ -24,15 +24,17 @@ void setupFace() {;
 }
 
 void setupCam() {
-  
+  int numberOfAttempts = 30;
+  int con = 0;
   // Camara
-  while(true)
-  try { 
-  cam = new Capture(this, width, height/2);
-  cam.start();
-  break;
-  } catch(IllegalStateException e) {print("Error\n");}
-  println(cam);
+  while(con < numberOfAttempts) {
+    con++;
+    try { 
+    cam = new Capture(this, width, height/2);
+    cam.start();
+    break;
+    } catch(IllegalStateException e) {}
+  }
 }
 
 
